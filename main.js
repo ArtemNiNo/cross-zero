@@ -17,27 +17,19 @@ function againstCompGaming() {
             hod++;
             console.log(hod);
         }
-        function checkWiner() {
+        function checkWiner(a, b, c) {
             allBlocks = document.querySelectorAll('.block--comp');
-            if (allBlocks[0].innerHTML == 'x' && allBlocks[1].innerHTML == 'x' && allBlocks[2].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[3].innerHTML == 'x' && allBlocks[4].innerHTML == 'x' && allBlocks[5].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[6].innerHTML == 'x' && allBlocks[7].innerHTML == 'x' && allBlocks[8].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[0].innerHTML == 'x' && allBlocks[3].innerHTML == 'x' && allBlocks[6].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[1].innerHTML == 'x' && allBlocks[4].innerHTML == 'x' && allBlocks[7].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[2].innerHTML == 'x' && allBlocks[5].innerHTML == 'x' && allBlocks[8].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[0].innerHTML == 'x' && allBlocks[4].innerHTML == 'x' && allBlocks[8].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[2].innerHTML == 'x' && allBlocks[4].innerHTML == 'x' && allBlocks[6].innerHTML == 'x') alert('победа крестиков');
-
-            if (allBlocks[0].innerHTML == '0' && allBlocks[1].innerHTML == '0' && allBlocks[2].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[3].innerHTML == '0' && allBlocks[4].innerHTML == '0' && allBlocks[5].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[6].innerHTML == '0' && allBlocks[7].innerHTML == '0' && allBlocks[8].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[0].innerHTML == '0' && allBlocks[3].innerHTML == '0' && allBlocks[6].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[1].innerHTML == '0' && allBlocks[4].innerHTML == '0' && allBlocks[7].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[2].innerHTML == '0' && allBlocks[5].innerHTML == '0' && allBlocks[8].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[0].innerHTML == '0' && allBlocks[4].innerHTML == '0' && allBlocks[8].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[2].innerHTML == '0' && allBlocks[4].innerHTML == '0' && allBlocks[6].innerHTML == '0') alert('победа ноликов');
+            if (a == 'x' && b == 'x' && c == 'x') alert('победа крестиков');
+            if (a == '0' && b == '0' && c == '0') alert('победа ноликов');
         }
-        checkWiner();
+        checkWiner(allBlocks[0].innerHTML, allBlocks[1].innerHTML, allBlocks[2].innerHTML);
+        checkWiner(allBlocks[3].innerHTML, allBlocks[4].innerHTML, allBlocks[5].innerHTML);
+        checkWiner(allBlocks[6].innerHTML, allBlocks[7].innerHTML, allBlocks[8].innerHTML);
+        checkWiner(allBlocks[0].innerHTML, allBlocks[3].innerHTML, allBlocks[6].innerHTML);
+        checkWiner(allBlocks[1].innerHTML, allBlocks[4].innerHTML, allBlocks[7].innerHTML);
+        checkWiner(allBlocks[2].innerHTML, allBlocks[5].innerHTML, allBlocks[8].innerHTML);
+        checkWiner(allBlocks[0].innerHTML, allBlocks[4].innerHTML, allBlocks[8].innerHTML);
+        checkWiner(allBlocks[2].innerHTML, allBlocks[4].innerHTML, allBlocks[6].innerHTML);
     })
 }
  function againstHumanGaming() {
@@ -58,27 +50,19 @@ function againstCompGaming() {
             else e.target.innerHTML = '0';
             hod++;
         }
-        function checkWiner() {
+        function checkWiner(a, b, c) {
             allBlocks = document.querySelectorAll('.block--human');
-            if (allBlocks[0].innerHTML == 'x' && allBlocks[1].innerHTML == 'x' && allBlocks[2].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[3].innerHTML == 'x' && allBlocks[4].innerHTML == 'x' && allBlocks[5].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[6].innerHTML == 'x' && allBlocks[7].innerHTML == 'x' && allBlocks[8].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[0].innerHTML == 'x' && allBlocks[3].innerHTML == 'x' && allBlocks[6].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[1].innerHTML == 'x' && allBlocks[4].innerHTML == 'x' && allBlocks[7].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[2].innerHTML == 'x' && allBlocks[5].innerHTML == 'x' && allBlocks[8].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[0].innerHTML == 'x' && allBlocks[4].innerHTML == 'x' && allBlocks[8].innerHTML == 'x') alert('победа крестиков');
-            if (allBlocks[2].innerHTML == 'x' && allBlocks[4].innerHTML == 'x' && allBlocks[6].innerHTML == 'x') alert('победа крестиков');
-
-            if (allBlocks[0].innerHTML == '0' && allBlocks[1].innerHTML == '0' && allBlocks[2].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[3].innerHTML == '0' && allBlocks[4].innerHTML == '0' && allBlocks[5].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[6].innerHTML == '0' && allBlocks[7].innerHTML == '0' && allBlocks[8].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[0].innerHTML == '0' && allBlocks[3].innerHTML == '0' && allBlocks[6].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[1].innerHTML == '0' && allBlocks[4].innerHTML == '0' && allBlocks[7].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[2].innerHTML == '0' && allBlocks[5].innerHTML == '0' && allBlocks[8].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[0].innerHTML == '0' && allBlocks[4].innerHTML == '0' && allBlocks[8].innerHTML == '0') alert('победа ноликов');
-            if (allBlocks[2].innerHTML == '0' && allBlocks[4].innerHTML == '0' && allBlocks[6].innerHTML == '0') alert('победа ноликов');
+            if (a == 'x' && b == 'x' && c == 'x') alert('победа крестиков');
+            if (a == '0' && b == '0' && c == '0') alert('победа ноликов');
         }
-        checkWiner();
+        checkWiner(allBlocks[0].innerHTML, allBlocks[1].innerHTML, allBlocks[2].innerHTML);
+        checkWiner(allBlocks[3].innerHTML, allBlocks[4].innerHTML, allBlocks[5].innerHTML);
+        checkWiner(allBlocks[6].innerHTML, allBlocks[7].innerHTML, allBlocks[8].innerHTML);
+        checkWiner(allBlocks[0].innerHTML, allBlocks[3].innerHTML, allBlocks[6].innerHTML);
+        checkWiner(allBlocks[1].innerHTML, allBlocks[4].innerHTML, allBlocks[7].innerHTML);
+        checkWiner(allBlocks[2].innerHTML, allBlocks[5].innerHTML, allBlocks[8].innerHTML);
+        checkWiner(allBlocks[0].innerHTML, allBlocks[4].innerHTML, allBlocks[8].innerHTML);
+        checkWiner(allBlocks[2].innerHTML, allBlocks[4].innerHTML, allBlocks[6].innerHTML);
     })
  }
 againstCompGaming();
