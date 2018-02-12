@@ -1,5 +1,4 @@
 Крестики нолики против компьютера и против игрока (на одной мыши). Чистый js.
 
 (просто практика для понимания обработчиков событий и навигация по DOM дереву)
-
-https://pp.userapi.com/c840528/v840528433/4dcb0/gNDatvWWxgw.jpg
+![Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
